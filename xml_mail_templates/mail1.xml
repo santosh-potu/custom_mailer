@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <to></to>
+    <cc></cc>
+    <subject>Pending Reimbursement</subject>
+    <content><![CDATA[Hi ,<br/>The attached reimbursement is pending for the past 5 months. Please help me to get it approved.<br/>Regards,<br/>Santosh Kumar Potu]]></content>
+    <attachment>/home/zee/Pictures/reimbursement.png</attachment> 
+</root>
