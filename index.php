@@ -27,7 +27,8 @@ $mail->Password = SMTP_PWD;
 $mail->setFrom(FROM_EMAIL, FROM_NAME);
 
 
-$templates = glob('xml_mail_templates/*.xml');
+$templates = glob(dirname(__FILE__).'/xml_mail_templates/*.xml');
+
 $msg = "";
 
 foreach ($templates as $template){
