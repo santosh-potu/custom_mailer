@@ -7,9 +7,13 @@ and open the template in the editor.
 
 
 <root>
-    <to></to>
-    <cc></cc>
-    <subject>Pending Reimbursement</subject>
-    <content><![CDATA[Hi ,<br/>The attached reimbursement is pending for the past 5 months. Please help me to get it approved.<br/>Regards,<br/>Santosh Kumar Potu]]></content>
+   <!--<to>mahendra.akkala@zee.esselgroup.com</to>
+    <cc>pavan.pvj@zee.esselgroup.com,santanu.tandi@zee.esselgroup.com,sridhar.mulagada@zee.esselgroup.com</cc>-->
+    <read_reciept>santosh.potu@zee.esselgroup.com</read_reciept>
+    <to>santosh.potu@zee.esselgroup.com</to>
+    <subject>Re: Pending Reimbursement</subject>
+    <!--<message_id><![CDATA[<MA1PR01MB24585E748F389A1EE3C38BD7E17C0@MA1PR01MB2458.INDPRD01.PROD.OUTLOOK.COM>]]></message_id>-->
+    <references><![CDATA[<UzOjl8B4HYbWWRC86srrVKBOYJ8pOvC1qMdZczFDUo@zee-HP-ProBook-440-G5>,<MAXPR01MB33915E7B656AA8C030339D4BBD610@MAXPR01MB3391.INDPRD01.PROD.OUTLOOK.COM>,<BMXPR01MB26644CD2AC670A0E0504CD1DBE7F0@BMXPR01MB2664.INDPRD01.PROD.OUTLOOK.COM>]]></references>
+    <content><![CDATA[Hi Mahendra,<br/>The attached reimbursement is pending for the past 5 months. Please help me to get it approved.<br/>Regards,<br/>Santosh Kumar Potu]]></content>
     <attachment>/home/zee/Pictures/reimbursement.png</attachment> 
 </root>

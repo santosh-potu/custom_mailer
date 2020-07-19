@@ -43,10 +43,29 @@ foreach ($templates as $template){
     foreach((array)$mailData->attachment as $attachment){
         $mail->addAttachment($attachment);
     }
-        
+    
+    if(isset($mailData->message_id)){
+        $mail->addCustomHeader('In-Reply-To', (string)$mailData->message_id);
+        //$mail->addCustomHeader('Message-ID', (string)$mailData->message_id);
+    }
+    if(isset($mailData->references)){
+        $mail->addCustomHeader('References', (string)$mailData->references);
+    }
+    
+    if(isset($mailData->read_reciept)){
+        $mail->ConfirmReadingTo = (string)$mailData->read_reciept;
+        //$mail->AddCustomHeader( "X-Confirm-Reading-To: ".(string)$mailData->read_reciept );
+        //$mail->AddCustomHeader( "Return-Receipt-To: ".(string)$mailData->read_reciept );
+        //$mail->AddCustomHeader( "Disposition-Notification-To: ".(string)$mailData->read_reciept );
+    }
+    
     $mail->Subject = (string)$mailData->subject;
     $mail->Body = (string)$mailData->content;
     $mail->isHTML(true);
+    
+        
+    
+    
         try{
             if (!$mail->send()) {
                 $msg .= 'Mailer Error: '. $mail->ErrorInfo;
